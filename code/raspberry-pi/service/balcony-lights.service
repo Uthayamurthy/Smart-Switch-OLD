@@ -1,0 +1,10 @@
+[Unit]
+Description=A service to start monitoring time treshold of balcony lights.
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 location-to-main.py/main.py
+
+[Install]
+WantedBy=multi-user.target
